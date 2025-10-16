@@ -1,0 +1,31 @@
+name: AdvancedReportSystem
+main: kirtan\ReportSystem\Main
+version: 2.0.0
+api: 5.0.0
+author: kirtan
+description: "Advanced player report system using SQLite database"
+
+commands:
+  report:
+    description: "Report a player"
+    usage: "/report <player> <reason>"
+    permission: reports.create
+  reports:
+    description: "List all reports"
+    usage: "/reports"
+    permission: reports.view
+  reportclose:
+    description: "Close a report by ID"
+    usage: "/reportclose <id>"
+    permission: reports.close
+
+permissions:
+  reports.receive:
+    description: "Receive report notifications"
+    default: op
+  reports.create:
+    default: true
+  reports.view:
+    default: op
+  reports.close:
+    default: op
