@@ -1,0 +1,2 @@
+# Configuration file for AdvancedReportSystem (SQLite)
+notify-format: "[Report] {reporter} -> {target} : {reason} (ID: {id})"
