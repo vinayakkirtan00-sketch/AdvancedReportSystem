@@ -18,7 +18,7 @@ It uses **SQLite** for persistent data storage and ensures zero console errors.
 ## 📦 Installation
 1. Download the latest **AdvancedReportSystem.phar** from Poggit:  
    👉 [Plugin Download Page](https://poggit.pmmp.io/p/AdvancedReportSystem/2.0.0)
-
+   
 ---
 
 ## ⚙️ Features
