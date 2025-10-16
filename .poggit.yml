@@ -1,0 +1,46 @@
+# Poggit-CI Manifest file for AdvancedReportSystem
+# -----------------------------------------------
+# This file tells Poggit how to build your plugin automatically from GitHub.
+# Just push this file to your repository root and enable Poggit CI from:
+# https://poggit.pmmp.io/ci/vinayakkirtan00-sketch/AdvancedReportSystem
+
+build-by-default: true
+branches:
+  - main
+projects:
+  AdvancedReportSystem:
+    icon: logo.png
+    path: ""
+    type: plugin
+    description: >
+      A powerful, clean, and optimized report management system for PocketMine-MP servers.
+      Allows players to report others with ease, stores all reports in an SQLite database,
+      and provides admins with simple review commands.
+    authors:
+      - Kirtan
+    version: 1.0.0
+    api:
+      - 5.0.0
+    php:
+      - 8.1
+      - 8.2
+      - 8.3
+    license: MIT
+    release:
+      name: "Initial Release"
+      description: >
+        ✨ First release of Advanced Report System!
+        Includes full report management, SQLite support, admin viewing commands, and optimized performance.
+    commands:
+      report:
+        description: Report a player for misconduct
+        usage: /report <player> <reason>
+        permission: report.use
+      reports:
+        description: View all reports in the database
+        permission: report.admin
+    permissions:
+      report.use:
+        default: true
+      report.admin:
+        default: op
